@@ -31,7 +31,7 @@ class SyntaxNetElement:
         print "Form: " +self.form+ " UPOS Tag: " +self.upos+ " XPOS Tag: " +self.xpos
 
 
-sentence = "Bob, a resident of Yorkshire, loves his wife and children"
+sentence = "I'm sorry Dave, I'm afraid I can't do that"
 result = subprocess.Popen(["echo " + sentence + " | ./demo-conll.sh 2>/dev/null"], shell=True, stdout=subprocess.PIPE).stdout.read()
 lines = [line.replace("\t", " ") for line in result.splitlines()]
 tokens = []
