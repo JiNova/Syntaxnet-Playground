@@ -59,6 +59,9 @@ Which is a table using the [CoNLL-U Format](http://universaldependencies.org/doc
 
 ### Using ParseyMcParseface within a small python-script
 
+The provided python-script should suffice for some small experiments. It is very simple and just reads the CoNLL-table from the command-line into an object. It only supports the parsing of single sentences so far and is able to either print all provided features of the CoNLL-table, or only the pos-tags (both the universal and the language-specific one).
+The script itself should, due to its rudimentary state, be pretty self-explanatory.
+
 ### Copying with docker
 
 You may copy something into or out form a container. Keep in mind that is only possible to do this with a temporary container, while it is running.  
